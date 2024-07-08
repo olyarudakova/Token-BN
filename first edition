@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+// Generated with Spectral Syntax
+
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract BerlinCoin is ERC20 {
+    uint256 public constant SUPPLY = 8000000 * 10 ** 18;
+
+    constructor() ERC20("BerlinCoin", "BN") {
+        _mint(msg.sender, SUPPLY);
+    }
+}
